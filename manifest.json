@@ -1,0 +1,25 @@
+{
+  "name" : "Soliloquy",
+  "version" : "1.0",
+  "manifest_version" : 1,
+  "description" : "a simple text area that appears on the side of your browser tab, for making quick notes.",
+  // "icons" : { "16" : "this_icon_doesnt_exist_yet_16.png",
+  //             "48" : "this_icon_doesnt_exist_yet_48.png",
+  //             "128" : "this_icon_doesnt_exist_yet_128.png"},
+  "background" : {
+    "scripts" : ["background.js"]
+  },
+  // the browser action is the icon that users click to activate the extension
+  "browser_action" : {
+    "default_title" : "Soliloquy",
+    "default_icom" : "soliloquy_icon_48.png"
+    },
+  "options_page" : "options.html",
+  // will likely require a different set of permissions
+  "permissions" : [
+    "background",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
