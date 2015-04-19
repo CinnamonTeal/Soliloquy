@@ -1,0 +1,11 @@
+
+.tagTree {
+  overflow-y: auto;
+  border: 1px solid #aaa;
+}
+
+.tagTree li.jstree-open > a .jstree-icon,
+.tagTree li.jstree-closed > a .jstree-icon,
+.tagTree li.jstree-leaf > a .jstree-icon {
+  background: url("../icons/tag-white.png") 0px 0px no-repeat !important;
+}
