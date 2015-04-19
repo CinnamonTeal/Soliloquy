@@ -1,0 +1,145 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#mainContainer {
+  width: 100%;
+  height: 60%;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+#labelPane {
+  background-color: #e5f2fe;
+  border: 1px solid #aaa;
+  margin: 5px;
+  padding: 5px;
+}
+
+#controlPane {
+  -webkit-box-flex: 1.0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+#contentPane {
+  -webkit-box-flex: 1.0;
+  border: 1px solid #aaa;
+  margin: 5px 5px 5px 0;
+  padding: 5px;
+}
+
+#contentPane > div {
+  display: none;
+}
+
+#contentPane > div.paneSelected {
+  display: block;
+}
+
+#contentPane input[type=radio] {
+  vertical-align: middle;
+}
+
+h1#title {
+  text-align: right;
+  padding-right: 30px;
+  margin: 0.5em 0 1em 0;
+}
+
+#labelContainer {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+#labelContainer > li {
+  list-style: none inside;
+  text-align: right;
+  padding: 3px 30px 3px 3px;
+  border: 1px solid #e5f2fe;
+}
+
+#labelContainer > li:hover {
+  background-color: #abd6ff;
+  border: 1px solid #759dc0;
+  cursor: pointer;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+#labelContainer > li.paneLabelSelected {
+  background-color: #cfe5fa;
+  border: 1px solid #759dc0;
+}
+
+#labelContainer > li.paneLabelSelected:hover {
+  background-color: #abd6ff;
+  border: 1px solid #759dc0;
+}
+
+.shortbox {
+  width: 70px;
+}
+
+.optionsTable td {
+  padding: 4px;
+}
+
+.optionsTable td:nth-child(2) {
+  margin: 0 2px;
+  font-weight: bold;
+}
+
+.disabledLabel {
+  color: #AAA;
+}
+
+#unignoredDiacriticsFieldLabel > span:last-child {
+  font-weight: bold;
+}
+
+span[data-i18n=milliseconds] {
+  margin-left: 3px;
+}
+
+.optionsTable td > span,
+.optionsTable td > label {
+  vertical-align: middle;
+}
+
+#dialogButton {
+  cursor: pointer;
+  margin-left: 15px;
+  color: #759dc0;
+}
+
+#dialogButton:hover {
+  color: #abd6ff;
+}
+
+#tagTree {
+  height: 200px;
+}
+
+#buttonPane {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border: 1px solid #aaa;
+  margin: 0 5px 5px 0;
+  padding: 5px;
+}
+
+#buttonPane *:focus {
+  outline: none;
+}
+
+.hspacer {
+  -webkit-box-flex: 1.0;
+}
+
+#flattrPane {
+  text-align: right;
+  padding: 3px 5px;
+}
+
