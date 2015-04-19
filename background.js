@@ -1,7 +1,9 @@
+// event listener waits to receive a message from "prefs" action, when user changes settings, to make sure
+// the settings are what the user specified as the script.js is loaded and initialized.
 chrome.extension.onMessage.addListener(
   function(request, sender, sendResponse) {
     if (request.action === "prefs") {
-      var prefsString = localstorage.prefs;
+      var prefsString = localstorage.prefs; // using localstorage, but may want chrome storage instead
       if (prefsString === undefined) {
         sendResponse(undefined);
       } else {
