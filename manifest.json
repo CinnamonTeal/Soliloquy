@@ -12,11 +12,13 @@
   // the browser action is the icon that users click to activate the extension
   "browser_action" : {
     "default_title" : "Soliloquy",
-    "default_icom" : "soliloquy_icon_48.png"
+    "default_icon" : "img/idea-48.png",
+    "default_popup" : "popup.html"
     },
   "options_page" : "options.html",
   // will likely require a different set of permissions
   "permissions" : [
+    "activeTab",
     "background",
     "tabs",
     "http://*/*",

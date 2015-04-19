@@ -3,19 +3,22 @@
 <!-- options are specified by the user, and they are stored in the context of the extension, rather  -->
 <!-- than the content they are manipulating -->
 
+<!-- 
+Needed Options: 
+  - hotkey mapping for activating textarea
+  - hotkey mapping for saving notes
+  - textarea location and size options 
+  -  
+
+  -->
+
 
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/dojo.css">
-<link rel="stylesheet" href="../lib/jquery-ui/css/start/jquery-ui.css">
-<link rel="stylesheet" href="css/TagTree.css">
 <link rel="stylesheet" href="css/options.css">
-<script src="../lib/jquery/jquery.js"></script>
-<script src="../lib/jstree/jquery.jstree.js"></script>
-<script src="../lib/jquery-ui/js/jquery-ui.js"></script>
-<script src="TagTree.js"></script>
 <script src="options.js"></script>
 </head>
 <body>
@@ -38,9 +41,9 @@
               <td><span data-i18n="ignoreCaseFieldLabel"></span></td>
               <td>:</td>
               <td>
-                <input type="radio" name="ignoreCase" id="ignoreCaseYes">
+                <input type="radio" name="ignoreCase" id="ignoreCaseYes">Ignore Case Yes
                 <label for="ignoreCaseYes" data-i18n="yes"></label>
-                <input type="radio" name="ignoreCase" id="ignoreCaseNo">
+                <input type="radio" name="ignoreCase" id="ignoreCaseNo">Ignore Case No
                 <label for="ignoreCaseNo" data-i18n="no"></label>
               </td>
             </tr>
@@ -48,45 +51,25 @@
               <td><span data-i18n="ignoreSpacesFieldLabel"></span></td>
               <td>:</td>
               <td>
-                <input type="radio" name="ignoreSpaces" id="ignoreSpacesYes">
+                <input type="radio" name="ignoreSpaces" id="ignoreSpacesYes">Ignore Spaces Yes
                 <label for="ignoreSpacesYes" data-i18n="yes"></label>
-                <input type="radio" name="ignoreSpaces" id="ignoreSpacesNo">
+                <input type="radio" name="ignoreSpaces" id="ignoreSpacesNo">Ignore Spaces No
                 <label for="ignoreSpacesNo" data-i18n="no"></label>
               </td>
             </tr>
-            <tr>
-              <td><span data-i18n="ignoreDiacriticsFieldLabel"></span></td>
-              <td>:</td>
-              <td>
-                <input type="radio" name="ignoreDiacritics" id="ignoreDiacriticsYes">
-                <label for="ignoreDiacriticsYes" data-i18n="yes"></label>
-                <input type="radio" name="ignoreDiacritics" id="ignoreDiacriticsNo">
-                <label for="ignoreDiacriticsNo" data-i18n="no"></label>
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>
-                <span id="unignoredDiacriticsFieldLabel">
-                  <span data-i18n="unignoredDiacriticsFieldLabel"></span>
-                  <span>:</span>
-                </span>
-                <input id="unignoredDiacritics">
-              </td>
-            </tr>
+
             <tr>
               <td><span data-i18n="ignoredPunctuationsFieldLabel"></span></td>
               <td>:</td>
               <td>
-                <input id="ignoredPunctuations">
+                <input id="ignoredPunctuations">Ignored Punctuations Field
               </td>
             </tr>
             <tr>
               <td><span data-i18n="aliasPrefixFieldLabel"></span></td>
               <td>:</td>
               <td>
-                <input id="aliasPrefix" class="shortbox">
+                <input id="aliasPrefix" class="shortbox">Alias Prefix Field
               </td>
             </tr>
           </tbody>
@@ -187,14 +170,14 @@
     </div>
     </div>
   </div>
+
+  <!-- better would be a paypal donate button -->
   <div id="flattrPane">
     <a href="http://flattr.com/thing/669659/Bookmark" target="_blank">
       <img src="icons/flattr-badge.png" alt="Flattr this" id="flattrButton" border="0" />
     </a>
   </div>
-  <div id="dialog">
-    <div id="tagTree"></div>
-  </div>
+
 </body>
 </html>
 
