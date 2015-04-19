@@ -2,3 +2,199 @@
 
 <!-- options are specified by the user, and they are stored in the context of the extension, rather  -->
 <!-- than the content they are manipulating -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/dojo.css">
+<link rel="stylesheet" href="../lib/jquery-ui/css/start/jquery-ui.css">
+<link rel="stylesheet" href="css/TagTree.css">
+<link rel="stylesheet" href="css/options.css">
+<script src="../lib/jquery/jquery.js"></script>
+<script src="../lib/jstree/jquery.jstree.js"></script>
+<script src="../lib/jquery-ui/js/jquery-ui.js"></script>
+<script src="TagTree.js"></script>
+<script src="options.js"></script>
+</head>
+<body>
+  <div id="mainContainer">
+    <div id="labelPane">
+      <h1 id="title" data-i18n="title"></h1>
+      <ul id="labelContainer">
+        <li id="normalizationPaneLabel" class="paneLabelSelected"
+          data-i18n="normalizationPaneLabel"></li>
+        <li id="omniboxPaneLabel" data-i18n="omniboxPaneLabel"></li>
+        <li id="popupPaneLabel" data-i18n="popupPaneLabel"></li>
+      </ul>
+    </div>
+    <div id="controlPane">
+    <div id="contentPane">
+      <div id="normalizationPane" class="paneSelected">
+        <table class="optionsTable">
+          <tbody>
+            <tr>
+              <td><span data-i18n="ignoreCaseFieldLabel"></span></td>
+              <td>:</td>
+              <td>
+                <input type="radio" name="ignoreCase" id="ignoreCaseYes">
+                <label for="ignoreCaseYes" data-i18n="yes"></label>
+                <input type="radio" name="ignoreCase" id="ignoreCaseNo">
+                <label for="ignoreCaseNo" data-i18n="no"></label>
+              </td>
+            </tr>
+            <tr>
+              <td><span data-i18n="ignoreSpacesFieldLabel"></span></td>
+              <td>:</td>
+              <td>
+                <input type="radio" name="ignoreSpaces" id="ignoreSpacesYes">
+                <label for="ignoreSpacesYes" data-i18n="yes"></label>
+                <input type="radio" name="ignoreSpaces" id="ignoreSpacesNo">
+                <label for="ignoreSpacesNo" data-i18n="no"></label>
+              </td>
+            </tr>
+            <tr>
+              <td><span data-i18n="ignoreDiacriticsFieldLabel"></span></td>
+              <td>:</td>
+              <td>
+                <input type="radio" name="ignoreDiacritics" id="ignoreDiacriticsYes">
+                <label for="ignoreDiacriticsYes" data-i18n="yes"></label>
+                <input type="radio" name="ignoreDiacritics" id="ignoreDiacriticsNo">
+                <label for="ignoreDiacriticsNo" data-i18n="no"></label>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>
+                <span id="unignoredDiacriticsFieldLabel">
+                  <span data-i18n="unignoredDiacriticsFieldLabel"></span>
+                  <span>:</span>
+                </span>
+                <input id="unignoredDiacritics">
+              </td>
+            </tr>
+            <tr>
+              <td><span data-i18n="ignoredPunctuationsFieldLabel"></span></td>
+              <td>:</td>
+              <td>
+                <input id="ignoredPunctuations">
+              </td>
+            </tr>
+            <tr>
+              <td><span data-i18n="aliasPrefixFieldLabel"></span></td>
+              <td>:</td>
+              <td>
+                <input id="aliasPrefix" class="shortbox">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="omniboxPane">
+        <table class="optionsTable">
+          <tbody>
+            <tr>
+              <td><span data-i18n="searchDelayFieldLabel"></span></td>
+              <td>:</td>
+              <td>
+                <input id="searchDelay" type="number" class="shortbox"
+                  min="0" step="100" required>
+                <span data-i18n="milliseconds"></span>
+              </td>
+            </tr>
+            <tr>
+              <td><span data-i18n="recursiveSearchFieldLabel"></span></td>
+              <td>:</td>
+              <td>
+                <input type="radio" name="recursiveSearch" id="recursiveSearchYes">
+                <label for="recursiveSearchYes"
+                  data-i18n="recursiveSearchYes"></label><br>
+                <input type="radio" name="recursiveSearch" id="recursiveSearchNo">
+                <label for="recursiveSearchNo"
+                  data-i18n="recursiveSearchNo"></label>
+              </td>
+            </tr>
+            <tr>
+              <td><span data-i18n="modeSwitchFieldLabel"></span></td>
+              <td>:</td>
+              <td>
+                <input id="modeSwitch" class="shortbox">
+              </td>
+            </tr>
+            <tr>
+              <td><span data-i18n="andSeparatorFieldLabel"></span></td>
+              <td>:</td>
+              <td>
+                <input id="andSeparator" class="shortbox">
+              </td>
+            </tr>
+            <tr>
+              <td><span data-i18n="nextPageFieldLabel"></span></td>
+              <td>:</td>
+              <td>
+                <input id="nextPage" class="shortbox">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="popupPane">
+        <table class="optionsTable">
+          <tbody>
+            <tr>
+              <td><span data-i18n="alertBarFieldLabel"></span></td>
+              <td>:</td>
+              <td>
+                <input type="radio" name="alertBar" id="alertBarYes">
+                <label for="alertBarYes"
+                  data-i18n="alertBarYes"></label><br>
+                <input type="radio" name="alertBar" id="alertBarNo">
+                <label for="alertBarNo"
+                  data-i18n="alertBarNo"></label>
+              </td>
+            </tr>
+            <tr>
+              <td><span data-i18n="expandTopLevelFieldLabel"></span></td>
+              <td>:</td>
+              <td>
+                <input type="radio" name="expandTopLevel" id="expandTopLevelYes">
+                <label for="expandTopLevelYes"
+                  data-i18n="expandTopLevelYes"></label><br>
+                <input type="radio" name="expandTopLevel" id="expandTopLevelNo">
+                <label for="expandTopLevelNo"
+                  data-i18n="expandTopLevelNo"></label>
+              </td>
+            </tr>
+            <tr>
+              <td><span data-i18n="defaultParentIdFieldLabel"></span></td>
+              <td>:</td>
+              <td>
+                <span id="defaultParentTitle"></span>
+                <span id="dialogButton"></span>
+                <input type="hidden"
+                  id="defaultParentId">
+              </td>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="buttonPane">
+      <button id="saveButton" data-i18n="saveButtonLabel" disabled></button>
+      <div class="hspacer"></div>
+      <button id="reindexButton" data-i18n="reindexButtonLabel"></button>
+    </div>
+    </div>
+  </div>
+  <div id="flattrPane">
+    <a href="http://flattr.com/thing/669659/Bookmark" target="_blank">
+      <img src="icons/flattr-badge.png" alt="Flattr this" id="flattrButton" border="0" />
+    </a>
+  </div>
+  <div id="dialog">
+    <div id="tagTree"></div>
+  </div>
+</body>
+</html>
+
