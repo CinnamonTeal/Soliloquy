@@ -2,10 +2,10 @@
   "name" : "Soliloquy",
   "version" : "1.0",
   "manifest_version" : 2,
-  "description" : "a simple text area that appears on the side of your browser tab, for making quick notes.",
-  // "icons" : { "16" : "this_icon_doesnt_exist_yet_16.png",
-  //             "48" : "this_icon_doesnt_exist_yet_48.png",
-  //             "128" : "this_icon_doesnt_exist_yet_128.png"},
+  "description" : "a simple text area that appears on the side of your browser, for capturing ideas.",
+  "icons" : { "16" : "img/idea-16.png",
+              "48" : "img/idea-48.png",
+              "128" : "img/idea-128.png"},
   "background" : {
     "scripts" : ["background.js"]
   },
