@@ -2,7 +2,7 @@
   "name" : "Soliloquy",
   "version" : "1.0",
   "manifest_version" : 2,
-  "description" : "a simple text area that appears on the side of your browser, for capturing ideas.",
+  "description" : "A simple text area that appears on the side of your browser, for capturing ideas.",
   "icons" : { "16" : "img/idea-16.png",
               "48" : "img/idea-48.png",
               "128" : "img/idea-128.png"},
