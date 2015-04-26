@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <title>Colify Options</title>
+
+        <style>
+
+            body {
+                font-family: helvetica, arial, sans-serif;
+            }
+
+            #header {
+                background:url(colify_icon_48.png) no-repeat;
+            }
+
+            #header h1 {
+                font-weight: bold;
+                padding-left: 60px;
+            }
+
+            #content {
+                border: 1px solid #dedede;
+                -webkit-border-radius: 5px;
+                padding: 25px;
+            }
+
+            p {
+                margin-top: 0;
+            }
+
+        </style>
+
+        <script src="options.js"></script>
+
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>Colify Options</h1>
+        </div>
+        <div id="content">
+            <p>How many columns would you like?</p>
+            <input type="range" min="2" max="5" step="1" value="2" id="colNumRange"/>
+            <span id="colNumLabel"></span>
+            <br/><br/>
+            <div>
+                <label>
+                    <input type="checkbox" id="autoColCheckbox"/>
+                    Automatically optimize column width.
+                </label>
+            </div>
+        </div>
+    </body>
+</html>

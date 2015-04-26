@@ -1,0 +1,23 @@
+{
+  "name": "Colify",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Reformats content into columns and pages.",
+  "icons": {"16":  "colify_icon_16.png",
+            "48":  "colify_icon_48.png",
+            "128": "colify_icon_128.png"},
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "Colify",
+    "default_icon": "colify_icon_16.png"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "background",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
