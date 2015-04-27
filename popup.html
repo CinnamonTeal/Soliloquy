@@ -1,15 +1,17 @@
 <body>
-<!-- does this need to POST to a URL, or can the form save to a local database like chrome.storage? -->
-<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+<form name="notes" method="POST">
 <div align="center">
 Soliloquy<br><br>
-<textarea cols="40" rows="20" name="myname">
-Quick! Write it down!
+<textarea id="value-in" cols="40" rows="20" name="notes">
+Quick! Write it down! (hit 'enter' to save)
 </textarea>
 <br><br>
-<!-- And now we are outside the area again. -->
-<!-- this will be where the save button goes, perhaps with text displaying the keyboard shortcut -->
-<button>Save</button>
+
+<!-- <button>Save</button> -->
 </div>
 </form>
+<ul id="value-out">
+<script src="save.js"></script>
 </body>
+
+ <!-- <input placeholder="Quick! Write it down!" id="value-in"/><style>input{ resize: vertical; height: 200px;resize: horizontal; width: 180px;}</style> -->

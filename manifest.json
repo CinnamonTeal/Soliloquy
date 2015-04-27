@@ -24,15 +24,15 @@
     "tabs",
     "http://*/*",
     "https://*/*"
-    ],
+    ]
   
-  "content_scripts": [
-  {
-    "matches": [
-    "<all_urls>"
-    ],
-    "js": ["content.js"]
-  }
-  ]
+  // "content_scripts": [
+  // {
+  //   "matches": [
+  //   "<all_urls>"
+  //   ],
+  //   "js": ["content.js"]
+  // }
+  // ]
 
 }
