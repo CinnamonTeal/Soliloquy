@@ -4,7 +4,7 @@ An inspiration manager for Google Chrome.
 
 Have you ever been reading a website, or watching a youtube video, and had an idea that you wanted to quickly jot down without losing your train of thought? Maybe it's a highly dense technical explanation, and you want to quickly plot some notes to refer back to. Or perhaps you're a blogger, or an editorialist, and you want to annotate a piece that you are reading in preparation for your response.  
 
-Have a soliloquy - a simple text area that appears on the side of your browser tab so that you never have to leave the page or pause the video in order to capture your thoughts.
+Capture your thoughts with a soliloquy - a simple text area that appears on the side of your browser tab so that you never have to leave the page or pause the video in order to capture your thoughts.
 
 
 Future Features:

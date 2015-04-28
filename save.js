@@ -27,16 +27,20 @@
     }
   });
 
-  chrome.storage.sync.get("notes", function(result){
+  chrome.storage.sync.set("notes", function(result){
+    valueChanged(result.notes);
+  });
+
+  chrome.storage.sync.get("value-out", function(result){
     valueChanged(result.notes);
   });
 
 })();
 
-if notes.changes
-var counter = 1
-      valueChanged(changes.notes#{counter}.newValue);
-  
+// if notes.changes{
+// var counter = 1
+//       valueChanged(changes.notes#{counter}.newValue);
+//   };
   // "content_scripts": [
   // {
   //   "matches": [

@@ -2,7 +2,7 @@
   "name" : "Soliloquy",
   "version" : "1.0",
   "manifest_version" : 2,
-  "description" : "A simple text area on the side of your browser for capturing ideas.",
+  "description" : "A simple text area that appears on the side of your browser, for capturing ideas.",
   "icons" : { "16" : "img/idea-16.png",
   "48" : "img/idea-48.png",
   "128" : "img/idea-128.png"},
@@ -12,7 +12,15 @@
   "browser_action" : {
     "default_title" : "Soliloquy",
     "default_icon" : "img/idea-48.png",
-    "default_popup" : "popup.html"
+    "default_popup" : "popup.html",
+    "commands" : {"_execute_browser_action":{
+        "suggested_key": {
+          "windows": "Ctrl+l",
+          "mac": "Command+l",
+          "chromeos": "Ctrl+l",
+          "linux": "Ctrl+l"}
+        }
+      }
     },
   "permissions" : [
     "activeTab",
