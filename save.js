@@ -17,7 +17,7 @@
       notes: value,
       timestamp: Date.now()
     }, function() {
-      console.log("Value set:" + value);
+      console.log("Value set from the first thing:" + value);
     });
   });
 
@@ -27,16 +27,15 @@
     }
   });
 
-  chrome.storage.sync.set("notes", function(result){
-    valueChanged(result.notes);
-  });
-
   chrome.storage.sync.get("value-out", function(result){
     valueChanged(result.notes);
   });
 
 })();
 
+  // chrome.storage.sync.set("notes", function(result){
+  //   valueChanged(result.notes);
+  // });
 // if notes.changes{
 // var counter = 1
 //       valueChanged(changes.notes#{counter}.newValue);

@@ -7,11 +7,10 @@ Quick! Write it down! (hit 'enter' to save)
 </form>
 <br><br>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
     $("#btn2").click(function(){
-        $("ol").append("<li>Appended item</li>");
+        $("ol").append("#value-out");
     });
 });
 </script>
@@ -20,8 +19,9 @@ $(document).ready(function(){
 </ol>
 
 <button id="btn2" type="submit">Save</button>
-<!-- <button>Save</button> -->
-<!-- <script src="save.js"></script> -->
+
+<script src="save.js"></script>
+
 </body>
 
  <!-- <input placeholder="Quick! Write it down!" id="value-in"/><style>input{ resize: vertical; height: 200px;resize: horizontal; width: 180px;}</style> -->

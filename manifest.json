@@ -6,19 +6,17 @@
   "icons" : { "16" : "img/idea-16.png",
   "48" : "img/idea-48.png",
   "128" : "img/idea-128.png"},
-  "background" : {
-    "scripts" : ["background.js"]
-    },
   "browser_action" : {
     "default_title" : "Soliloquy",
     "default_icon" : "img/idea-48.png",
     "default_popup" : "popup.html",
-    "commands" : {"_execute_browser_action":{
+    "commands" : {"execute_browser_action":{
         "suggested_key": {
-          "windows": "Ctrl+l",
-          "mac": "Command+l",
-          "chromeos": "Ctrl+l",
-          "linux": "Ctrl+l"}
+          "windows": "Alt+s",
+          "mac": "Alt+s",
+          "chromeos": "Alt+s",
+          "linux": "Alt+s"},
+        "description" : "execute browser action"
         }
       }
     },
