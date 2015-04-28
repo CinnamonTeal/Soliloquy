@@ -2,21 +2,18 @@
   "name" : "Soliloquy",
   "version" : "1.0",
   "manifest_version" : 2,
-  "description" : "A simple text area that appears on the side of your browser, for capturing ideas.",
+  "description" : "A simple text area on the side of your browser for capturing ideas.",
   "icons" : { "16" : "img/idea-16.png",
   "48" : "img/idea-48.png",
   "128" : "img/idea-128.png"},
   "background" : {
     "scripts" : ["background.js"]
     },
-  // the browser action is the icon that users click to activate the extension
   "browser_action" : {
     "default_title" : "Soliloquy",
     "default_icon" : "img/idea-48.png",
     "default_popup" : "popup.html"
     },
-    "options_page" : "options.html",
-  // will likely require a different set of permissions
   "permissions" : [
     "activeTab",
     "background",
@@ -25,14 +22,4 @@
     "http://*/*",
     "https://*/*"
     ]
-  
-  // "content_scripts": [
-  // {
-  //   "matches": [
-  //   "<all_urls>"
-  //   ],
-  //   "js": ["content.js"]
-  // }
-  // ]
-
 }

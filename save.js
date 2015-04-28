@@ -36,3 +36,12 @@
 if notes.changes
 var counter = 1
       valueChanged(changes.notes#{counter}.newValue);
+  
+  // "content_scripts": [
+  // {
+  //   "matches": [
+  //   "<all_urls>"
+  //   ],
+  //   "js": ["content.js"]
+  // }
+  // ]
